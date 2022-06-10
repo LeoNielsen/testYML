@@ -30,6 +30,15 @@ function apiFacade() {
       .then(handleHttpErrors)
       .then(res => { setToken(res.token) })
   }
+
+  const decodeToken = () => {
+    const token = getToken()
+    const decodeToken = token;
+    const decode = jwtDecode(decodeToken)
+    setToken(token);
+    return decode
+  }
+
   const fetchUserInfo = () => {
     const options = makeOptions("GET", true); //True add's the token
     return fetch(URL + "/api/info/userinfo", options).then(handleHttpErrors);
@@ -66,6 +75,7 @@ function apiFacade() {
     loggedIn,
     login,
     logout,
+    decodeToken,
     fetchUserInfo,
     create,
   }
