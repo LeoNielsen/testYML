@@ -10,7 +10,7 @@ jobs:
       - name: Deploy to foo-bar.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: 'foo-bar.surge.sh'
+          domain: 'luksuspanda.surge.sh'
           project: '.'
           login: 'leo.nielsen21@gmail.com'
           token: '1cf59040d88689ec37effeabfb8ef411'
