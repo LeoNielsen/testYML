@@ -31,7 +31,7 @@ jobs:
         with:
        
       # chance this to your domain
-          domain: 'luksuspanda.surge.sh'
+          domain: 'https://luksuspanda.surge.sh'
           
       # chance this if to your build path, if necessary
           project: './dist'
