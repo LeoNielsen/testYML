@@ -25,5 +25,5 @@ jobs:
         with:
           domain: 'luksuspanda.surge.sh'
           project: './dist'
-          login: ${{ SURGE_EMAIL }}
-          token: ${{ SURGE_TOKEN }}
+          login: ${{ secrets.SURGE_EMAIL }}
+          token: ${{ secrets.SURGE_TOKEN }}
