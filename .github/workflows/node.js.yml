@@ -28,4 +28,4 @@ jobs:
     - run: npm run build
     - run: npm install -g surge
     - run: surge --project ./dist --domain luksuspanda.surge.sh
-    - run: leo.nielsen21@gmail.com
+      id: leo.nielsen21@gmail.com
