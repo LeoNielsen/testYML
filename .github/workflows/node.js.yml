@@ -3,11 +3,21 @@ name: My workflow
 on: push
 
 jobs:
+
   my-job:
     name: My job
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to foo-bar.surge.sh
+      - uses: actions/checkout@v3
+      - name: build
+        uses: actions/setup-node@v3
+        with:
+         node-version: ${{ matrix.node-version }}
+         cache: 'npm'
+      - run: npm i
+      - run: npm run build 
+    
+      - name: Deploy to luksuspanda.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'luksuspanda.surge.sh'
