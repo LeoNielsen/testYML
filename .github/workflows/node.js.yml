@@ -17,6 +17,7 @@ jobs:
         with:
          node-version: ${{ matrix.node-version }}
          cache: 'npm'
+      - run: sed -i -e 's/localhost:8080\/ex_startcode_backend_war_exploded/MYDOMAIN/g' src/settings.js
       - run: npm i
       - run: npm run build 
     
