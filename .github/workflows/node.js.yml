@@ -1,11 +1,14 @@
-name: My workflow
+name: surge deploy
 
-on: push
+on:
+  push:
+    branches: [ "main" ]
+
 
 jobs:
 
-  my-job:
-    name: My job
+  build:
+    name: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,5 +25,5 @@ jobs:
         with:
           domain: 'luksuspanda.surge.sh'
           project: './dist'
-          login: 'leo.nielsen21@gmail.com'
-          token: '1cf59040d88689ec37effeabfb8ef411'
+          login: ${{ SURGE_EMAIL }}
+          token: ${{ SURGE_TOKEN }}
