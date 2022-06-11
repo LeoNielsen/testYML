@@ -11,6 +11,6 @@ jobs:
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'luksuspanda.surge.sh'
-          project: '.'
+          project: './dist'
           login: 'leo.nielsen21@gmail.com'
           token: '1cf59040d88689ec37effeabfb8ef411'
