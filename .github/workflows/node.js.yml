@@ -30,3 +30,4 @@ jobs:
     - run: surge --project ./dist --domain luksuspanda.surge.sh
       env:
         email: 'leo.nielsen21@gmail.com'
+        token: '1cf59040d88689ec37effeabfb8ef411'
