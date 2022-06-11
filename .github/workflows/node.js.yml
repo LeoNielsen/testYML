@@ -25,17 +25,17 @@ jobs:
     
       # uncommented all ##
   
-      ## - name: Deploy
-      ##  uses: dswistowski/surge-sh-action@v1
-      ##  with:
+      - name: Deploy
+        uses: dswistowski/surge-sh-action@v1
+        with:
        
       # chance this to your domain
-      ##    domain: 'domain.surge.sh'
+          domain: 'luksuspanda.surge.sh'
           
       # chance this if to your build path, if necessary
-      ##    project: './dist'
+          project: './dist'
           
       # setup secrets, the email you use in surge
       # an the token, if you dont have your token, write surge token in your cmd
-      ##    login: ${{ secrets.SURGE_EMAIL }}
-      ##    token: ${{ secrets.SURGE_TOKEN }}
+          login: ${{ secrets.SURGE_EMAIL }}
+          token: ${{ secrets.SURGE_TOKEN }}
