@@ -9,7 +9,7 @@ const Home = () => {
             <div className='section' style={{ gridTemplateRows: "60% auto" }}>
 
                 <div className='header'>
-                  <h1>Starcode</h1>
+                  <h1>Startcode</h1>
                   <h2>put your startcode here </h2>
                 </div>
 
